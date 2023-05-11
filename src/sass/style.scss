@@ -1,0 +1,25 @@
+.header {
+    height: 70px;
+    background-color: rgb(103, 103, 243);
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.btn {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 5px;
+}
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tan;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+}

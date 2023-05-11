@@ -8,6 +8,7 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <header class="header">
     <form class="search-form" id="search-form">
       <input
         type="text"
@@ -15,10 +16,13 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button class="btn" type="submit">Search</button>
     </form>
+  </header>
+    <div class="gallery"></div>
+    <button class="load" type="button">Load More</button>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <script src="index.js" type="module"></script>
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>
