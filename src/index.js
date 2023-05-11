@@ -14,12 +14,16 @@ async function getData(params) {
         }
     
         appendCardsToGallery(data.data.hits.map(createCard));
+        if(data.data.total === 0){
+            loadBtn.style.display = 'none'
+            Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.")
+            return
+           }
         if(page===1){
 Notiflix.Notify.success(`Hooray! We found ${data.data.totalHits} images.`)
+
         }
-       if(data.data.total === 0){
-        Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.")
-       }
+       
         if (data.data.totalHits<=page*40) {
             loadBtn.style.display ="none"
             Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.")
